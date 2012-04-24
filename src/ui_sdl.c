@@ -1,8 +1,13 @@
 #ifdef __APPLE__
 #include <SDL.h>
 #else
+#ifdef __QNXNTO__
+#include <SDL.h>
+#else
 #include <SDL/SDL.h>
 #endif
+#endif
+
 #define IBNIZ_MAIN
 #include "ibniz.h"
 #include "texts.i"

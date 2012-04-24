@@ -53,7 +53,7 @@ void gen_nativeinit()
 "    SDL_PollEvent(&e);\n"
 "    if(e.type==SDL_KEYDOWN)break;\n"
 "\n"
-"    t=((SDL_GetTicks()*3)/50)<<16;\n");
+"    t=((SDL_GetTicks()*3)/50)<<16;\n" );
 
   /* tyx loop */
 printf("    for(y=-0xFFFF;y<0x10000;y+=0x200)\n"
